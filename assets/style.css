@@ -11,6 +11,7 @@ body
   font-family: 'Poppins', sans-serif;
 }
 
+/* Main section */
 header 
 {
   display: flex;
@@ -35,6 +36,8 @@ header h2
 {
   padding: 2rem;
 }
+
+/* App logo */
 #logo 
 {
   text-decoration: none;
@@ -42,6 +45,8 @@ header h2
   font-size: 38px;
   filter: blur(.6px);
 }
+
+/* Search field */
 .search-form 
 {
   padding: 2rem;
@@ -93,6 +98,7 @@ header h2
   background: #ff3300;
 }
 
+/* Image gallery */
 .gallery-info 
 {
   display: flex;
@@ -127,6 +133,7 @@ header h2
   border-image-slice: 1;
 }
 
+/* More pictures button */
 .nav-button 
 {
   min-height: 30vh;
@@ -140,7 +147,6 @@ header h2
   background: transparent;
   border: 1px solid #ff8800;
   color: #ff8800;
-  /* border: none; */
   font-size: 17px;
   cursor: pointer;
   border-radius: 3px;
@@ -150,5 +156,24 @@ header h2
 {
   background: #ff3300;
   border: 1px solid #ff3300;
+  color: #fff;
+}
+
+/* Back to top */
+.fa-chevron-up
+{
+  padding: 1rem 1rem;
+  background: #333;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 3px;
+  filter: blur(.2px);
+}
+.fa-chevron-up:hover
+{
+  background: #000;
+  border: 1px solid #000;
   color: #fff;
 }
