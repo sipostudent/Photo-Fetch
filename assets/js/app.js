@@ -79,12 +79,3 @@ async function loadMore() {
 }
 
 curatedPhotos();
-
-// Float Back To Top Smooth Scrolling
-$(window).scroll(function () {
-  if ($(this).scrollTop() > 100) {
-    $('#scroll').fadeIn();
-  } else {
-    $('#scroll').fadeOut();
-  }
-});
