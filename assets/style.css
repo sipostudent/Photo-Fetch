@@ -1,16 +1,14 @@
 /* Google Font */
-/* @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 * 
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Poppins', sans-serif; */
-  font-family: consolas;
 }
 body 
 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 header 
@@ -18,6 +16,18 @@ header
   display: flex;
   flex-direction: column;
   min-height: 30vh;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 8px solid;
+  border-image-source: linear-gradient(90deg,#7d02a1,#f30 50%,#f50);
+  border-image-slice: 1;
+
+
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                  url("../assets/img/yellow-bokeh-photo-949587.jpg");
+  background-size: cover;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -28,7 +38,9 @@ header h2
 #logo 
 {
   text-decoration: none;
-  color: black;
+  color: #fff;
+  font-size: 38px;
+  filter: blur(.6px);
 }
 .search-form 
 {
@@ -42,18 +54,20 @@ header h2
   height: 60px;
   border: none;
   margin: 15px 0 20px;
-  background: transparent;
+  background-color: rgba(255, 255, 255, 0.6);
   outline: none;
   padding: 0 20px;
-  font-size: 24px;
+  font-size: 17px;
   letter-spacing: 4px;
   box-sizing: border-box;
-  border-radius: 8px 0 0 8px;
+  border-radius: 3px 0 0 3px;
   color: #333;
-  box-shadow: -4px -4px 10px rgba(255, 255, 255, 1),
-              inset 4px 4px 10px rgba(0, 0, 0, 0.05),
-              inset -4px -4px 10px rgba(255,255,255,1),
-              4px 4px 10px rgba(0,0,0,0.05);
+  filter: blur(.2px);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.search-form input:focus {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .search-form input:placeholder
 {
@@ -64,14 +78,19 @@ header h2
   position: relative;
   width: 30%;
   height: 60px;
-  border: none;
-  border-radius: 0 8px 8px 0;
+  border: 1px solid #e5e5e5;
+  border-radius: 0 3px 3px 0;
   margin: 15px 0 20px;
   padding: 0.5rem;
-  font-size: 1rem;
-  background: #333;
-  color: white;
+  font-size: 17px;
+  background: #ff8800;
+  color: #fff;
   cursor: pointer;
+  filter: blur(.2px);
+}
+.search-form button:hover
+{
+  background: #ff3300;
 }
 
 .gallery-info 
@@ -79,12 +98,12 @@ header h2
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: gray;
+  color: #333;
   padding: 0.5rem 0rem;
 }
 .gallery-info a 
 {
-  color: gray;
+  color: #333;
 }
 
 .gallery 
@@ -103,6 +122,9 @@ header h2
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-top: 8px solid;
+  border-image-source: linear-gradient(90deg,#7d02a1,#f30 50%,#f50);
+  border-image-slice: 1;
 }
 
 .nav-button 
@@ -115,10 +137,18 @@ header h2
 .more 
 {
   padding: 1rem 3rem;
-  background: #333;
-  color: #fff;
-  border: none;
-  font-size: 1.2rem;
+  background: transparent;
+  border: 1px solid #ff8800;
+  color: #ff8800;
+  /* border: none; */
+  font-size: 17px;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 3px;
+  filter: blur(.2px);
+}
+.more:hover
+{
+  background: #ff3300;
+  border: 1px solid #ff3300;
+  color: #fff;
 }
