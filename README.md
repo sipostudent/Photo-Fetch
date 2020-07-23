@@ -1,6 +1,6 @@
 <h1 align = "center">
 <br>
-  <img src = "assets/img/photo-fetch.png" width = "600">
+  <img src = "assets/img/fetcicture.png" width = "600">
   <br>
     <br>
   Photo Fetch - Fetch/Image API
