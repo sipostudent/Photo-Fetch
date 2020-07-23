@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <!-- meta -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+      <title>Free Stock Photos • Fetcicture</title>
 
-    <!-- Import: favicon -->
-    <link rel="icon" href="./assets/img/retro-cam.png">
+      <!-- Libraries CSS Files -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+      
+      <!-- Main Stylesheet File -->
+      <link rel="stylesheet" href="./assets/style.css">
+      
+      <!-- Favicon -->
+      <link rel="icon" href="./assets/img/camera-retro.png">
+      
+      <!-- =======================================================
+         Description: Stock Photograph Fetching Application
+         Author: Sipo Charles
+         ======================================================= -->
+   </head>
+   
+   <body>
+      <!-- section 1.0: search form -->
+      <header>
+         <h2><a id="logo" href="./index.html"><i class="fas fa-camera-retro"></i> Fetcicture</a></h2>
+         <p id="slogan">The best free stock photographs shared by skilled makers.</p>
+         <form class="search-form">
+            <input type="text" name="search" placeholder="Search..." class="search-input" />
+            <button type="submit" class="submit-btn"><i class="fas fa-search"></i></button>
+         </form>
+      </header>
+      
+      <!-- section 2.0: gallery -->
+      <main>
+         <div class="gallery"></div>
+      </main>
 
-    <!-- Import: style.css -->
-    <link rel="stylesheet" href="./assets/style.css">
+      <!-- section 3.0: photo generate button -->
+      <footer id="footer">
+         <div class="nav-button border-bottom">
+            <button class="more-button">More</button>
+         </div>
 
-    <title>Free Stock Photos • Fetcicture</title>
-</head>
-<body>
+         <!-- section 3.1: back to top button -->
+         <div class="nav-button">
+            <a href="#"><i class="fas fa-chevron-up"></i></a>
+         </div>
+      </footer>
 
-  <!-- SECTION 1: SEARCH BAR -->
-  <header>
-    <h2><a id="logo" href="./index.html"><i class="fas fa-camera-retro"></i> Fetcicture</a></h2>
-    <form class="search-form">
-      <input type="text" name="search" placeholder="Search..." class="search-input" />
-      <button type="submit" class="submit-btn"><i class="fas fa-search"></i></button>
-    </form>
-  </header>
-
-  <!-- SECTION 2: PHOTO GALLERY -->
-  <main>
-    <div class="gallery"></div>
-  </main>
-
-  <!-- SECTION 3: PHOTO GENERATE BUTTON -->
-  <div class="nav-button">
-    <button class="more">More...</button>
-  </div>
-
-  <!-- SECTION 4: BACK TO TOP -->
-  <div class="nav-button">
-    <a href="#"><i class="fas fa-chevron-up"></i></a>
-  </div>
-
-  <!-- JAVASCRIPT: SCRIPT -->
-  <script src="./assets/js/app.js"></script>
-</body>
+      <!-- Template Main JavaScript File -->
+      <script src="./assets/js/app.js"></script>
+   </body>
 </html>

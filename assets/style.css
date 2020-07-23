@@ -1,179 +1,244 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-* 
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/*
+  Description: Stock Photograph Fetching Application
+  Author: Sipo Charles
+*/
+
+
+/*  general styling
+/*-----------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-body 
-{
-  font-family: 'Poppins', sans-serif;
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  css smooth scrolling
+/*-----------------------------------------------------------------------------------*/
+
+html {
+	scroll-behavior: smooth;
 }
 
-/* Main section */
-header 
-{
-  display: flex;
-  flex-direction: column;
-  min-height: 30vh;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 8px solid;
-  border-image-source: linear-gradient(90deg,#7d02a1,#f30 50%,#f50);
-  border-image-slice: 1;
+
+/*-----------------------------------------------------------------------------------*/
 
 
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                  url("../assets/img/yellow-bokeh-photo-949587.jpg");
+/*  body
+/*-----------------------------------------------------------------------------------*/
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #f2f2f2;
+	border-top: 4px solid #f50;
+	border-bottom: 4px solid #f50;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  section 1.0: header
+/*-----------------------------------------------------------------------------------*/
+
+header {
+	display: flex;
+	flex-direction: column;
+	min-height: 30vh;
+	justify-content: center;
+	align-items: center;
+  background: #fff;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header h2 
-{
-  padding: 2rem;
+
+	border: 16px solid #f2f2f2;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-/* App logo */
-#logo 
-{
-  text-decoration: none;
-  color: #fff;
-  font-size: 38px;
-  filter: blur(.6px);
+header h2 {
+	padding: 2rem;
 }
 
-/* Search field */
-.search-form 
-{
-  padding: 2rem;
-  display: flex;
-}
-.search-form input 
-{
-  position: relative;
-  width: 100%;
-  height: 60px;
-  border: none;
-  margin: 15px 0 20px;
-  background-color: rgba(255, 255, 255, 0.6);
-  outline: none;
-  padding: 0 20px;
-  font-size: 17px;
-  letter-spacing: 4px;
-  box-sizing: border-box;
-  border-radius: 3px 0 0 3px;
-  color: #333;
-  filter: blur(.2px);
-  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-}
-.search-form input:focus {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-.search-form input:placeholder
-{
-  letter-spacing: 0px;
-}
-.search-form button 
-{
-  position: relative;
-  width: 30%;
-  height: 60px;
-  border: 1px solid #e5e5e5;
-  border-radius: 0 3px 3px 0;
-  margin: 15px 0 20px;
-  padding: 0.5rem;
-  font-size: 17px;
-  background: #ff8800;
-  color: #fff;
-  cursor: pointer;
-  filter: blur(.2px);
-}
-.search-form button:hover
-{
-  background: #ff3300;
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  section 1.0: logo & slogan
+/*-----------------------------------------------------------------------------------*/
+
+#logo {
+	text-decoration: none;
+	color: #333;
+	font-size: 40px;
+	filter: blur(.2px);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
 }
 
-/* Image gallery */
-.gallery-info 
-{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #333;
-  padding: 0.5rem 0rem;
-}
-.gallery-info a 
-{
-  color: #333;
+#slogan {
+	color: #999;
+	font-weight: 500;
+	font-size: 13px;
+	font-family: 'Roboto', sans-serif;
 }
 
-.gallery 
-{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  padding: 2rem 0rem;
-  width: 80%;
-  margin: auto;
-  row-gap: 5rem;
-  column-gap: 3rem;
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  section 1.0: search form & button
+/*-----------------------------------------------------------------------------------*/
+
+.search-form {
+	padding: 2rem;
+	display: flex;
 }
 
-.gallery-img img 
-{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-top: 8px solid;
-  border-image-source: linear-gradient(90deg,#7d02a1,#f30 50%,#f50);
-  border-image-slice: 1;
+.search-form input {
+	position: relative;
+	width: 100%;
+	height: 46px;
+	border: none;
+	margin: 15px 0 20px;
+	background: #f2f2f2;
+	outline: none;
+	padding: 0 16px;
+	font-size: 16px;
+	letter-spacing: 4px;
+	box-sizing: border-box;
+	border-radius: 3px 0 0 3px;
+	color: #333;
+	filter: blur(.2px);
 }
 
-/* More pictures button */
-.nav-button 
-{
-  min-height: 30vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.more 
-{
-  padding: 1rem 3rem;
-  background: transparent;
-  border: 1px solid #ff8800;
-  color: #ff8800;
-  font-size: 17px;
-  cursor: pointer;
-  border-radius: 3px;
-  filter: blur(.2px);
-}
-.more:hover
-{
-  background: #ff3300;
-  border: 1px solid #ff3300;
-  color: #fff;
+.search-form input:placeholder {
+	letter-spacing: 0px;
 }
 
-/* Back to top */
-.fa-chevron-up
-{
-  padding: 1rem 1rem;
-  background: #333;
-  border: 1px solid #333;
-  color: #fff;
-  font-size: 17px;
-  cursor: pointer;
-  border-radius: 3px;
-  filter: blur(.2px);
+.search-form button {
+	position: relative;
+	width: 30%;
+	height: 46px;
+	border: 1px solid #ff8800;
+	border-radius: 0 3px 3px 0;
+	margin: 15px 0 20px;
+	padding: 0 16px;
+	font-size: 17px;
+	background: #ff8800;
+	color: #fff;
+	cursor: pointer;
 }
-.fa-chevron-up:hover
-{
-  background: #000;
-  border: 1px solid #000;
-  color: #fff;
+
+.search-form button:hover {
+	background: #ff3300;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  section 2.0: gallery
+/*-----------------------------------------------------------------------------------*/
+
+.gallery-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #333;
+	padding: 0.5rem 0rem;
+}
+
+.gallery-info a {
+	color: #333;
+	font-weight: 700;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	padding: 2rem 0rem;
+	width: 80%;
+	margin: auto;
+	row-gap: 5rem;
+	column-gap: 3rem;
+}
+
+.gallery-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border: 16px solid #fff;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  section 3.0: more pictures button
+/*-----------------------------------------------------------------------------------*/
+
+.nav-button {
+	min-height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #d1d1d1;
+}
+
+.more-button {
+	padding: 1rem 3rem;
+	background: #ff8800;
+	border: 1px solid #ff8800;
+	color: #fff;
+	font-size: 17px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.more:hover {
+	background: #ff3300;
+	border: 1px solid #ff3300;
+	color: #fff;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*  section 3.1: back to top button & footer
+/*-----------------------------------------------------------------------------------*/
+
+.fa-chevron-up {
+	padding: 1rem 1rem;
+	background: #000;
+	border: 1px solid #000;
+	color: #fff;
+	font-size: 17px;
+	cursor: pointer;
+	border-radius: 3px;
+	filter: blur(.2px);
+}
+
+#footer {
+	display: flex;
+	flex-direction: column;
+	min-height: 30vh;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	border: 16px solid #f2f2f2;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
