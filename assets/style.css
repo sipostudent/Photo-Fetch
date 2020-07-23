@@ -115,7 +115,6 @@ header h2 {
 	box-sizing: border-box;
 	border-radius: 3px 0 0 3px;
 	color: #333;
-	filter: blur(.2px);
 }
 
 .search-form input:placeholder {
@@ -130,7 +129,7 @@ header h2 {
 	border-radius: 0 3px 3px 0;
 	margin: 15px 0 20px;
 	padding: 0 16px;
-	font-size: 17px;
+	font-size: 16px;
 	background: #ff8800;
 	color: #fff;
 	cursor: pointer;
@@ -200,12 +199,12 @@ header h2 {
 	background: #ff8800;
 	border: 1px solid #ff8800;
 	color: #fff;
-	font-size: 17px;
+	font-size: 16px;
 	cursor: pointer;
 	border-radius: 3px;
 }
 
-.more:hover {
+.more-button:hover {
 	background: #ff3300;
 	border: 1px solid #ff3300;
 	color: #fff;
@@ -223,10 +222,9 @@ header h2 {
 	background: #000;
 	border: 1px solid #000;
 	color: #fff;
-	font-size: 17px;
+	font-size: 16px;
 	cursor: pointer;
 	border-radius: 3px;
-	filter: blur(.2px);
 }
 
 #footer {
